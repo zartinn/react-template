@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "lib": [
       "es2015",
       "dom.iterable",
@@ -35,11 +35,13 @@
     "importHelpers": true,
     "paths": {
       "@assets": [
-        "./assets/*"
+        "./src/assets/*"
       ]
     }
   },
   "include": [
-    "*.ts"
-  ]
+    "./src/*.tsx",
+    "./src/*.d.ts"
+  ],
+  "files": [ "./src/index.d.ts"]
 }
