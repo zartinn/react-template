@@ -1,7 +1,7 @@
-import { Component } from 'react';
+import React from 'react';
 import './Resume.scss';
 
-export default class Resume extends Component {
+export default class Resume extends React.Component {
   render() {
     return (
       <div className="resume">

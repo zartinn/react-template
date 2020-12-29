@@ -1,7 +1,7 @@
-import { Component } from 'react';
+import React from 'react';
 import './Contact.scss';
 
-export default class Contact extends Component {
+export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact">

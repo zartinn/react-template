@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import './Header.scss';
-import logo from '../../../assets/logo.svg';
+import logo from '@assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { normalize, setColors } from '../../shared/utils';
 import { routes } from '../../routes';
@@ -17,7 +17,7 @@ export default class Header extends React.Component<HeaderProps, HeaderStates> {
     this.alternateColors = this.alternateColors.bind(this);
   }
 
-  private links = routes.map(route => <span><Link to={route.path}>{normalize(route.path)}</Link></span>);
+  private links = routes.map((route, index) => <span key={index}><Link to={route.path}>{normalize(route.path)}</Link></span>);
 
   private alternateColors() {
     if (this.state.isDark) {

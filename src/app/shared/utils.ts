@@ -1,7 +1,6 @@
 const root = getRoot();
 
 function getRoot() {
-    console.log('get root');
     return document.querySelector<HTMLElement>('#root');
 }
 

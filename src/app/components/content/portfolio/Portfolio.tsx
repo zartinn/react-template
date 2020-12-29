@@ -1,7 +1,7 @@
-import { Component } from 'react';
+import React from 'react';
 import './Portfolio.scss';
 
-export default class Portfolio extends Component {
+export default class Portfolio extends React.Component {
   render() {
     return (
       <div className="portfolio">
