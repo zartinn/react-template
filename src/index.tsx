@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import App from './app/App';
 import { HashRouter } from 'react-router-dom';
 
+// set React to window object to be accessible globally in your app. Needed when you do not explicitely want to import React in every tsx/jsx file.
+window.React = React;
+
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <HashRouter>
-      <App />
+      <App></App>
     </HashRouter>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 

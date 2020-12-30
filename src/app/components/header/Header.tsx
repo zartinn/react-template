@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import './Header.scss';
 import logo from '@assets/logo.svg';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ import { routes } from '../../routes';
 type HeaderProps = {};
 type HeaderStates = { isDark: boolean };
 
-export default class Header extends React.Component<HeaderProps, HeaderStates> {
+export default class Header extends Component<HeaderProps, HeaderStates> {
 
   constructor(props: any) {
     super(props);
