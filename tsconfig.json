@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "outDir": "./dist/",
     "strictNullChecks": true,
     "moduleResolution": "node",
@@ -33,6 +33,7 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
+    "typeRoots" : ["node_modules/@types", "src/types.d.ts"],
     "paths": {
       "@assets": [
         "./src/assets/*"
@@ -42,6 +43,5 @@
   "include": [
     "./src/*.tsx",
     "./src/*.d.ts"
-  ],
-  "files": [ "./src/index.d.ts"]
+  ]
 }
